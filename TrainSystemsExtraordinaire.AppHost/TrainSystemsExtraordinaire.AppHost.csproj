@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Trains\Trains.csproj" />
     <ProjectReference Include="..\WebCCTVUi\WebCCTVUi\WebCCTVUi.csproj" />
   </ItemGroup>
 

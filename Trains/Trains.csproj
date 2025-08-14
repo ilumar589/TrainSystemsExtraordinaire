@@ -18,4 +18,8 @@
     <Folder Include="Base\DB\Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TrainSystemsExtraordinaire.ServiceDefaults\TrainSystemsExtraordinaire.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

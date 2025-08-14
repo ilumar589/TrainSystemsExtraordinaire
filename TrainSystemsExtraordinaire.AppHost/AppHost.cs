@@ -47,4 +47,6 @@ var pgSlave2 = builder.AddContainer("postgres-slave2", "postgres:latest")
 
 builder.AddProject<Projects.WebCCTVUi>("webcctvui");
 
+builder.AddProject<Projects.Trains>("trains");
+
 builder.Build().Run();
