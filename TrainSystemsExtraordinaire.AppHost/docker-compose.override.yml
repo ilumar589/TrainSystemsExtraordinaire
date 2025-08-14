@@ -1,0 +1,65 @@
+version: '3.9'
+services:
+  postgres-master:
+    build: .
+    container_name: postgres-master
+    environment:
+      POSTGRES_USER: masteruser
+      POSTGRES_PASSWORD: masterpass
+      POSTGRES_DB: appdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - master_data:/var/lib/postgresql/data
+    networks:
+      - dbnet
+
+  postgres-slave1:
+    build: .
+    container_name: postgres-slave1
+    environment:
+      POSTGRES_USER: replicauser
+      POSTGRES_PASSWORD: replicapass
+    ports:
+      - "5433:5432"
+    volumes:
+      - slave1_data:/var/lib/postgresql/data
+    depends_on:
+      - postgres-master
+    networks:
+      - dbnet
+    entrypoint: >
+      bash -c "
+      rm -rf /var/lib/postgresql/data/* &&
+      PGPASSWORD=replica_pass pg_basebackup -h postgres-master -D /var/lib/postgresql/data -U replicator -Fp -Xs -P -R &&
+      exec docker-entrypoint.sh postgres
+      "
+
+  postgres-slave2:
+    build: .
+    container_name: postgres-slave2
+    environment:
+      POSTGRES_USER: replicauser
+      POSTGRES_PASSWORD: replicapass
+    ports:
+      - "5434:5432"
+    volumes:
+      - slave2_data:/var/lib/postgresql/data
+    depends_on:
+      - postgres-master
+    networks:
+      - dbnet
+    entrypoint: >
+      bash -c "
+      rm -rf /var/lib/postgresql/data/* &&
+      PGPASSWORD=replica_pass pg_basebackup -h postgres-master -D /var/lib/postgresql/data -U replicator -Fp -Xs -P -R &&
+      exec docker-entrypoint.sh postgres
+      "
+
+volumes:
+  master_data:
+  slave1_data:
+  slave2_data:
+
+networks:
+  dbnet:
