@@ -45,8 +45,10 @@ var pgSlave2 = builder.AddContainer("postgres-slave2", "postgres:latest")
         "exec docker-entrypoint.sh postgres")
     .WithEndpoint(5434, 5432);
 
+builder.AddProject<Projects.Trains>("trains");
+
+
 builder.AddProject<Projects.WebCCTVUi>("webcctvui");
 
-builder.AddProject<Projects.Trains>("trains");
 
 builder.Build().Run();
