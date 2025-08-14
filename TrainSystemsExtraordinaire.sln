@@ -14,15 +14,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCCTVUi", "WebCCTVUi\WebC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCCTVUi.Client", "WebCCTVUi\WebCCTVUi.Client\WebCCTVUi.Client.csproj", "{40BDBC83-0F90-4BCD-ACE1-00D76802F779}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4D4BC076-E6C1-4C01-A66C-A8FFAE7EF56B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postgres", "Postgres", "{78099473-7A84-4764-83AA-36CB34D9ED9D}"
-	ProjectSection(SolutionItems) = preProject
-		dockerfile = dockerfile
-		init.sql = init.sql
-		postgresql.conf = postgresql.conf
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,7 +44,6 @@ Global
 		{1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3} = {1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1}
 		{40BDBC83-0F90-4BCD-ACE1-00D76802F779} = {1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1}
-		{78099473-7A84-4764-83AA-36CB34D9ED9D} = {4D4BC076-E6C1-4C01-A66C-A8FFAE7EF56B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23AFFF67-7952-4A85-A128-5EBB9AC98D73}
