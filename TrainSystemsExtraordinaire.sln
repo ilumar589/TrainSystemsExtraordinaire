@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainSystemsExtraordinaire.AppHost", "TrainSystemsExtraordinaire.AppHost\TrainSystemsExtraordinaire.AppHost.csproj", "{81ADFD57-0149-44F0-9F73-164B3AD3725A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainSystemsExtraordinaire.ServiceDefaults", "TrainSystemsExtraordinaire.ServiceDefaults\TrainSystemsExtraordinaire.ServiceDefaults.csproj", "{671FC7E5-8775-029F-5941-8A2D95320833}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebClients", "WebClients", "{1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCCTVUi", "WebCCTVUi\WebCCTVUi\WebCCTVUi.csproj", "{FBF48B72-BFAE-4870-ABE4-782C3A2514F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCCTVUi.Client", "WebCCTVUi\WebCCTVUi.Client\WebCCTVUi.Client.csproj", "{40BDBC83-0F90-4BCD-ACE1-00D76802F779}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81ADFD57-0149-44F0-9F73-164B3AD3725A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81ADFD57-0149-44F0-9F73-164B3AD3725A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81ADFD57-0149-44F0-9F73-164B3AD3725A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81ADFD57-0149-44F0-9F73-164B3AD3725A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671FC7E5-8775-029F-5941-8A2D95320833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671FC7E5-8775-029F-5941-8A2D95320833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671FC7E5-8775-029F-5941-8A2D95320833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671FC7E5-8775-029F-5941-8A2D95320833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BDBC83-0F90-4BCD-ACE1-00D76802F779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BDBC83-0F90-4BCD-ACE1-00D76802F779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BDBC83-0F90-4BCD-ACE1-00D76802F779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BDBC83-0F90-4BCD-ACE1-00D76802F779}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FBF48B72-BFAE-4870-ABE4-782C3A2514F3} = {1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1}
+		{40BDBC83-0F90-4BCD-ACE1-00D76802F779} = {1B2E7BF2-699D-4D95-BAB5-36B11BBDB2F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23AFFF67-7952-4A85-A128-5EBB9AC98D73}
+	EndGlobalSection
+EndGlobal
