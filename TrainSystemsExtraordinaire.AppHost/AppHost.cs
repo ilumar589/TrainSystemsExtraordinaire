@@ -99,7 +99,7 @@ var pgpool = builder.AddContainer("pgpool", "bitnami/pgpool", "4")
 
 
 builder.AddProject<Projects.Trains>("trains")
-     .WithEnvironment("ConnectionStrings__AppDb", "Host=pgpool;Port=5432;Database=appdb;Username=admin;Password=adminpass;Pooling=true;")
+     .WithEnvironment("DbConnections__TrainsDb", "Host=pgpool;Port=5432;Database=appdb;Username=admin;Password=adminpass;Pooling=true;")
      .WithReference(pgpool.GetEndpoint("postgres")); // lets Aspire know app depends on pgpool;
 
 

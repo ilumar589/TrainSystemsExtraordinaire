@@ -9,6 +9,7 @@ public sealed class TrainsContext(DbContextOptions<TrainsContext> options) : DbC
         base.OnModelCreating(modelBuilder);
         // Configure your entities here
     }
-    // Define DbSets for your entities
-    // public DbSet<YourEntity> YourEntities { get; set; }
+
+
+    
 }
