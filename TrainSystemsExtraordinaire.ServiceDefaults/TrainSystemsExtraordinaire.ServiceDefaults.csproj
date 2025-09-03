@@ -3,7 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	<TieredCompilation>true</TieredCompilation>
+	<TieredPGO>true</TieredPGO>
+	<ServerGarbageCollection>true</ServerGarbageCollection>
+	<ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+	<GarbageCollectionAdaptationMode>1</GarbageCollectionAdaptationMode>
+	<Nullable>enable</Nullable>
+	<WarningsAsErrors>Nullable</WarningsAsErrors>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <IsAspireSharedProject>true</IsAspireSharedProject>
   </PropertyGroup>
 

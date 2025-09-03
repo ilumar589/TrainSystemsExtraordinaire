@@ -24,6 +24,13 @@ public static class DbConfigExtensions
                     maxRetryDelay: TimeSpan.FromSeconds(30),
                     errorCodesToAdd: null);
             }); 
+
+            options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+
+            /// TODO: Consider removing these in production builds for security and performance reasons.
+            options.EnableDetailedErrors(true);
+
+            options.EnableSensitiveDataLogging(true);
         });
     }
 
