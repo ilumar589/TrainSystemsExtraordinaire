@@ -2,7 +2,7 @@
 
 namespace Trains.Base.DB.Contexts;
 
-public sealed class TrainsContext(DbContextOptions<TrainsContext> options) : DbContext(options), IEntityDefinitions
+public sealed class TrainsContext(DbContextOptions<TrainsContext> options) : DbContext(options)
 {
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
