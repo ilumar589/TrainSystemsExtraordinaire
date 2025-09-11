@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <Folder Include="Base\DB\Migrations\" />
-    <Folder Include="Base\DB\TableStructure\" />
   </ItemGroup>
 
   <ItemGroup>

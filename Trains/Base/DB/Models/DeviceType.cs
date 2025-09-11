@@ -9,4 +9,11 @@ public sealed class DeviceType
     public string?           Description { get; set; }
     public required DateTime LastUpdatedAt { get; set; }
     public required string   LastUpdatedBy { get; set; }
+
+    #region Navigation Properties
+
+    public required Classification Classification { get; set; }
+    public required List<DeviceTypeEncodingSettings> DeviceTypeEncodingSettings { get; set; } = [];
+
+    #endregion
 }
