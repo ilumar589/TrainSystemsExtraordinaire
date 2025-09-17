@@ -25,6 +25,8 @@ public static class DbConfigExtensions
                     errorCodesToAdd: null);
             }); 
 
+            // I want this as the default behaviour as all queries should use struct projections
+            // The only time I need it is when creating new entities for saving
             options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             /// TODO: Consider removing these in production builds for security and performance reasons.

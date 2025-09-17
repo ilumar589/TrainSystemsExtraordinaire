@@ -15,5 +15,10 @@ public sealed class DeviceTable : IEntityTypeConfiguration<Device>
         builder.HasIndex(x => new { });
 
         builder.HasIndex(x => x.ViIdentifier);
+
+        builder
+            .HasOne(device => device.DeviceType)
+            .WithMany(deviceType => deviceType.Devices)
+            .HasForeignKey(device => device.DeviceTypeId);
     }
 }

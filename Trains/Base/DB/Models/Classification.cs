@@ -16,4 +16,10 @@ public sealed class Classification
     public required string                 StartIpRange { get; set; }
     public required string                 EndIpRange { get; set; }
     public required ClassificationCapacity Capacity { get; set; }
+
+    #region Navigation properties
+
+    public List<DeviceType>                DeviceTypes { get; set; } = [];
+
+    #endregion
 }

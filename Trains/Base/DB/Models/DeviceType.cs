@@ -12,8 +12,10 @@ public sealed class DeviceType
 
     #region Navigation Properties
 
-    public required Classification Classification { get; set; }
-    public required List<DeviceTypeEncodingSettings> DeviceTypeEncodingSettings { get; set; } = [];
+    public required Guid                    ClassificationId { get; set; }
+    public required Classification          Classification { get; set; }
+    public List<DeviceTypeEncodingSettings> DeviceTypeEncodingSettings { get; set; } = [];
+    public List<Device>                     Devices { get; set; } = [];
 
     #endregion
 }
